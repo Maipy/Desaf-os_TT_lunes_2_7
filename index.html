@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola</h1>
+    <script>
+        const nombreProducto = "Guitarra";
+        const precioUnitario = 400;
+        let cantidadDeseada;
+        
+        cantidadDeseada = prompt("Ingrese la cantidad de " + nombreProducto + "($" + precioUnitario + ") que desea comprar:" )
+        
+        let precioTotal = cantidadDeseada * nombreProducto
+        alert(`El total de tu compra es ${precioTotal}`)
+    </script>
+    <script src="./index.js" async></script>
+</body>
+</html>
