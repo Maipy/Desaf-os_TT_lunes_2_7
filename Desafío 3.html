@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 3</title>
+</head>
+<body>
+    <script>
+        let nombreProducto = "Vestido";
+         precioUnitario = 20000;
+        let cantidadDeseada = prompt(`Ingrese la cantidad de ${nombreProducto}s ($${precioUnitario} C/U) que desea comprar:`)
+
+        let precioSinDescuento = precioUnitario * cantidadDeseada;
+        let descuento = precioSinDescuento * 0.1;
+        let precioConDescuento = precioSinDescuento - descuento;
+
+        if (cantidadDeseada > 5){
+            alert(`El precio total de tu compra es de ${precioConDescuento}. Se aplicó para este un descuento del 10% (${descuento}).`);
+        }else {
+            alert(`El precio total de compra es de ${precioSinDescuento}.`)
+        }
+    </script>
+</body>
+</html>
