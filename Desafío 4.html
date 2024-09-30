@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let nombreProducto = "Remeras sublimadas";
+    let precioUnitario = 20000;
+    let cantidadDeseada = prompt(`Ingrese la cantidad de ${nombreProducto}s que desea comprar. Le recordamos que el precio por unidad es de $${precioUnitario}:`);
+    function sumarProductos(precioUnitario,cantidadDeseada){
+        let precioTotal = precioUnitario * cantidadDeseada;
+        return precioTotal;
+    }
+    
+    let totalCompra = sumarProductos(precioUnitario,cantidadDeseada);
+    
+    alert(` El precio total de su compra es de $${totalCompra}.`)
+    </script>
+</body>
+</html>
