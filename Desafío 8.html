@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let productos = ["Vestido", "Blusa","Body","Croptop","Camisa"]
+
+        for(let prod of productos){
+            let h2 = document.createElement("h2")
+            h2.innerHTML = prod
+            document.body.appendChild(h2)
+            h2.style.color = "blue"
+            h2.style.fontSize = "40px"
+        }
+    </script>
+</body>
+</html>
